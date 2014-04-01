@@ -20,4 +20,15 @@ class Instructor < Person
   end
 end
 
+instructor = Instructor.new("Chris")
+instructor.greeting
+
+student = Student.new("Cristina")
+student.greeting
+
+instructor.teach
+student.learn
+
+student.teach #the teach method is part of the instructor class and not accessible by the student class
+
 
